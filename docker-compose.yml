@@ -1,0 +1,21 @@
+version: '3'
+services:
+  healthcheck:
+    container_name: healthcheck_container
+    image: www.thinhlh.com/healthcheck_service:latest
+    ports:
+      - "8084:8084"
+    environment:
+      - MONGO_INITDB_HOST
+      - MONGO_INITDB_PORT
+      - MONGO_INITDB_DATABASE
+      - MONGO_INITDB_ROOT_USERNAME
+      - MONGO_INITDB_ROOT_PASSWORD
+    networks:
+      - app_network
+    restart: on-failure
+
+networks:
+  app_network:
+    external: true
+    driver: bridge
