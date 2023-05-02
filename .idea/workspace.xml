@@ -26,14 +26,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="2P8O1KdTLM5Up8odkBRs7jpfKcs" />
@@ -102,6 +96,7 @@
       <workItem from="1682835026634" duration="2817000" />
       <workItem from="1682865776708" duration="6040000" />
       <workItem from="1682909917064" duration="8000" />
+      <workItem from="1682909944175" duration="100000" />
     </task>
     <servers />
   </component>
