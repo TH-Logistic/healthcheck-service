@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6364e1a-6797-4152-8004-3b46db81ee6e" name="Changes" comment="" />
+    <list default="true" id="a6364e1a-6797-4152-8004-3b46db81ee6e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/healthcheck-service-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/healthcheck-service-0.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/healthcheck-service-0.0.1.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/healthcheck-service-0.0.1.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.thlogistic.healthcheck.healthcheckservice.HealthcheckServiceApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.thlogistic.healthcheck.healthcheckservice.HealthcheckServiceApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/thlogistic/healthcheck/healthcheckservice/HealthcheckServiceApplicationTests.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,6 +104,7 @@
       <workItem from="1682865776708" duration="6040000" />
       <workItem from="1682909917064" duration="8000" />
       <workItem from="1682909944175" duration="100000" />
+      <workItem from="1682995749715" duration="375000" />
     </task>
     <servers />
   </component>
