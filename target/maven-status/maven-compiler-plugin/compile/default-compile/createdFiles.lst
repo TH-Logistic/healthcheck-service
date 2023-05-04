@@ -27,5 +27,6 @@ com/thlogistic/healthcheck/healthcheckservice/core/usecases/BaseUseCase.class
 com/thlogistic/healthcheck/healthcheckservice/core/usecases/CreateHealthcheckUseCaseImpl.class
 com/thlogistic/healthcheck/healthcheckservice/core/usecases/GetHealthcheckUseCase.class
 com/thlogistic/healthcheck/healthcheckservice/config/AuthenticationAppConfig.class
+com/thlogistic/healthcheck/healthcheckservice/config/CorsConfig$1.class
 com/thlogistic/healthcheck/healthcheckservice/utils/DateTimeFormatter.class
 com/thlogistic/healthcheck/healthcheckservice/adapters/dtos/ErrorResponse.class
