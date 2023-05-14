@@ -20,6 +20,7 @@
 /Users/JYR35VVWWJ/IdeaProjects/th-logistic/healthcheck-service/src/main/java/com/thlogistic/healthcheck/healthcheckservice/adapters/dtos/CreateHealthcheckRequest.java
 /Users/JYR35VVWWJ/IdeaProjects/th-logistic/healthcheck-service/src/main/java/com/thlogistic/healthcheck/healthcheckservice/infrastructure/persistence/entities/HealthcheckEntity.java
 /Users/JYR35VVWWJ/IdeaProjects/th-logistic/healthcheck-service/src/main/java/com/thlogistic/healthcheck/healthcheckservice/adapters/repositories/HealthcheckRepositoryImpl.java
+/Users/JYR35VVWWJ/IdeaProjects/th-logistic/healthcheck-service/src/main/java/com/thlogistic/healthcheck/healthcheckservice/client/AuthorizationClient.java
 /Users/JYR35VVWWJ/IdeaProjects/th-logistic/healthcheck-service/src/main/java/com/thlogistic/healthcheck/healthcheckservice/core/ports/HealthcheckRepository.java
 /Users/JYR35VVWWJ/IdeaProjects/th-logistic/healthcheck-service/src/main/java/com/thlogistic/healthcheck/healthcheckservice/utils/DateTimeFormatter.java
 /Users/JYR35VVWWJ/IdeaProjects/th-logistic/healthcheck-service/src/main/java/com/thlogistic/healthcheck/healthcheckservice/aop/exception/DataNotFoundException.java

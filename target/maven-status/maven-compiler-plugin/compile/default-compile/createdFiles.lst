@@ -4,6 +4,7 @@ com/thlogistic/healthcheck/healthcheckservice/adapters/dtos/CreateHealthcheckReq
 com/thlogistic/healthcheck/healthcheckservice/utils/Const.class
 com/thlogistic/healthcheck/healthcheckservice/adapters/repositories/MongoHealthcheckRepository.class
 com/thlogistic/healthcheck/healthcheckservice/infrastructure/persistence/entities/HealthcheckDetail.class
+com/thlogistic/healthcheck/healthcheckservice/client/AuthorizationClient.class
 com/thlogistic/healthcheck/healthcheckservice/adapters/repositories/BasePagingQueryResult.class
 com/thlogistic/healthcheck/healthcheckservice/adapters/dtos/GetHealthcheckResponse.class
 com/thlogistic/healthcheck/healthcheckservice/HealthcheckServiceApplication.class

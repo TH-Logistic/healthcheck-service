@@ -14,11 +14,11 @@ public class GetHealthcheckResponse {
     String id;
     String note;
     String createdAt;
-    boolean isHealthcheckOk;
-    boolean isTiresOk;
-    boolean isLightOk;
-    boolean isBrakeOk;
-    boolean isFluidLevelOk;
-    boolean isBatteryOk;
-    boolean isWiperOk;
+    Boolean isHealthcheckOk;
+    Boolean isTiresOk;
+    Boolean isLightOk;
+    Boolean isBrakeOk;
+    Boolean isFluidLevelOk;
+    Boolean isBatteryOk;
+    Boolean isWiperOk;
 }

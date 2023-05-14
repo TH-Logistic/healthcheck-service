@@ -19,12 +19,12 @@ public class CreateHealthcheckUseCaseImpl implements CreateHealthcheckUseCase {
     @Override
     public CreateHealthcheckResponse execute(CreateHealthcheckRequest request) {
         HealthcheckDetail healthcheckDetail = new HealthcheckDetail(
-                request.isTiresOk(),
-                request.isLightOk(),
-                request.isBrakeOk(),
-                request.isFluidLevelOk(),
-                request.isBatteryOk(),
-                request.isWiperOk()
+                request.getIsTiresOk(),
+                request.getIsLightOk(),
+                request.getIsBrakeOk(),
+                request.getIsFluidLevelOk(),
+                request.getIsBatteryOk(),
+                request.getIsWiperOk()
         );
         if (!DateTimeFormatter.checkDateTimeFormat(request.getCreatedAt())) {
             throw new InvalidDateTimeFormatException("Invalid datetime format");

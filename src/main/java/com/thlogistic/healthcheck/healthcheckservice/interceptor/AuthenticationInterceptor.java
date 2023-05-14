@@ -38,6 +38,7 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
                 throw new UnauthorizedException("Invalid token credential");
             }
         } else {
+            System.out.println("justin else");
             throw new UnauthorizedException("Invalid token credential");
         }
         return true;
