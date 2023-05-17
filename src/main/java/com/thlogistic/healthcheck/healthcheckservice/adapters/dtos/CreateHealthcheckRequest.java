@@ -40,7 +40,4 @@ public class CreateHealthcheckRequest {
     Boolean isWiperOk;
 
     String note;
-
-    @NotBlank(message = "Invalid time created")
-    String createdAt;
 }

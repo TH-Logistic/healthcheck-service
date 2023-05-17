@@ -26,14 +26,11 @@ public class CreateHealthcheckUseCaseImpl implements CreateHealthcheckUseCase {
                 request.getIsBatteryOk(),
                 request.getIsWiperOk()
         );
-        if (!DateTimeFormatter.checkDateTimeFormat(request.getCreatedAt())) {
-            throw new InvalidDateTimeFormatException("Invalid datetime format");
-        }
         HealthcheckEntity entity = new HealthcheckEntity(
                 request.getJobId(),
                 request.getNote(),
                 healthcheckDetail,
-                request.getCreatedAt()
+                DateTimeFormatter.getCurrentTimeFormatted()
         );
         String id = repository.insert(entity);
         return new CreateHealthcheckResponse(id);
