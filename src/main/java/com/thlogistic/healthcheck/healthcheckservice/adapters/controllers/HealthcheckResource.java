@@ -2,6 +2,7 @@ package com.thlogistic.healthcheck.healthcheckservice.adapters.controllers;
 
 import com.thlogistic.healthcheck.healthcheckservice.adapters.dtos.CreateHealthcheckRequest;
 import jakarta.validation.Valid;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,5 +13,5 @@ interface HealthcheckResource {
     ResponseEntity<Object> getHealthcheck(@PathVariable String jobId);
 
     @PostMapping
-    ResponseEntity<Object> createHealthcheck(@Valid @RequestBody CreateHealthcheckRequest request);
+    ResponseEntity<Object> createHealthcheck(@RequestHeader(HttpHeaders.AUTHORIZATION) String token, @Valid @RequestBody CreateHealthcheckRequest request);
 }

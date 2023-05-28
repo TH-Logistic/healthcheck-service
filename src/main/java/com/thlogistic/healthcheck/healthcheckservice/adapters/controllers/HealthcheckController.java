@@ -1,5 +1,6 @@
 package com.thlogistic.healthcheck.healthcheckservice.adapters.controllers;
 
+import com.thlogistic.healthcheck.healthcheckservice.adapters.dtos.BaseTokenRequest;
 import com.thlogistic.healthcheck.healthcheckservice.adapters.dtos.CreateHealthcheckRequest;
 import com.thlogistic.healthcheck.healthcheckservice.adapters.dtos.CreateHealthcheckResponse;
 import com.thlogistic.healthcheck.healthcheckservice.adapters.dtos.GetHealthcheckResponse;
@@ -23,8 +24,13 @@ public class HealthcheckController extends BaseController implements Healthcheck
     }
 
     @Override
-    public ResponseEntity<Object> createHealthcheck(CreateHealthcheckRequest request) {
-        CreateHealthcheckResponse response = createHealthcheckUseCase.execute(request);
+    public ResponseEntity<Object> createHealthcheck(String token, CreateHealthcheckRequest request) {
+        CreateHealthcheckResponse response = createHealthcheckUseCase.execute(
+                new BaseTokenRequest<>(
+                        token,
+                        request
+                )
+        );
         return successResponse(response, null);
     }
 }

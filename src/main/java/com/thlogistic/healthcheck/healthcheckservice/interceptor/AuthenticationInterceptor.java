@@ -2,8 +2,8 @@ package com.thlogistic.healthcheck.healthcheckservice.interceptor;
 
 import com.thlogistic.healthcheck.healthcheckservice.adapters.dtos.BaseResponse;
 import com.thlogistic.healthcheck.healthcheckservice.aop.exception.UnauthorizedException;
-import com.thlogistic.healthcheck.healthcheckservice.client.AuthorizationClient;
-import com.thlogistic.healthcheck.healthcheckservice.client.PermissionDto;
+import com.thlogistic.healthcheck.healthcheckservice.client.auth.AuthorizationClient;
+import com.thlogistic.healthcheck.healthcheckservice.client.auth.PermissionDto;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;

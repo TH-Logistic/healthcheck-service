@@ -3,6 +3,7 @@ package com.thlogistic.healthcheck.healthcheckservice.aop;
 import com.thlogistic.healthcheck.healthcheckservice.adapters.dtos.ErrorResponse;
 import com.thlogistic.healthcheck.healthcheckservice.aop.exception.DataNotFoundException;
 import com.thlogistic.healthcheck.healthcheckservice.aop.exception.InvalidDateTimeFormatException;
+import com.thlogistic.healthcheck.healthcheckservice.aop.exception.InvalidJobException;
 import com.thlogistic.healthcheck.healthcheckservice.aop.exception.UnauthorizedException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -42,6 +43,13 @@ public class ControllerAdvisor extends ResponseEntityExceptionHandler {
     @ExceptionHandler(InvalidDateTimeFormatException.class)
     public ResponseEntity<Object> handleInvalidDateTimeFormatException(
             InvalidDateTimeFormatException ex, WebRequest request) {
+        Map<String, Object> response = ErrorResponse.errorResponse(ex.getMessage(), null);
+        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(InvalidJobException.class)
+    public ResponseEntity<Object> handleInvalidJobException(
+            InvalidJobException ex, WebRequest request) {
         Map<String, Object> response = ErrorResponse.errorResponse(ex.getMessage(), null);
         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
     }
